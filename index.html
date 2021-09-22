@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Checkpoint2</title>
+  </head>
+
+  <body>
+    <main>
+      <section>
+        <img src="./img/maletinha.png" alt="Logo mala" />
+        <h2>Receba mais informações</h2>
+      </section>
+
+      <form action="#" method="POST">
+
+        <fieldset>
+
+          <legend>Dados Pessoais:</legend>
+          <label for="nome">Nome: </label>
+          <input
+            type="text"
+            name="nome"
+            id="nome"
+            required
+            placeholder="Digite seu nome"
+          />
+
+          <label for="email">E-mail: </label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            placeholder="Digite seu e-mail"
+          />
+
+          <label for="telefone">Telefone</label>
+          <input 
+          type="tel" 
+          name="telefone" 
+          id="telefone"
+          placeholder="Digite seu telefone"
+          />
+
+          <label for="data">Data de nascimento: </label>
+          <input
+            type="date"
+            name="data" 
+            id="data"
+            required
+          />
+
+        </fieldset>
+
+        <fieldset>
+          <legend>Faixa etária</legend>
+
+          <div class="Idade">
+            <input id="idademenor" type="radio" />
+            <label for="idademenor">Menor de idade</label>
+            <input id="idademaior" type="radio" />
+            <label for="idademaior">Maior de idade</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Pontos turísticos</legend>
+          <div class="PontosTur">
+            <select name="PontosTur" id="PontosTur">
+              <option value="">Selecione uma opção</option>
+              <optgroup label="Pontos turísticos">
+                <option value="Ponto1">Ponto1</option>
+                <option value="Ponto2">Ponto2</option>
+                <option value="Ponto3">Ponto3</option>
+                <option value="Ponto4">Ponto4</option>
+                <option value="Ponto5">Ponto5</option>
+              </optgroup>
+            </select>
+          </div>  
+        </fieldset>
+
+        <fieldset>
+          <legend>Interesses na cidade</legend>
+          <div class="Interesses">
+            <input id="Turista" type="checkbox" />
+            <label for="Turista">Turista</label>
+            <input id="Residente" type="checkbox" />
+            <label for="Residente">Residente</label>
+            <input id="Estudante" type="checkbox" />
+            <label for="Estudante">Estudante</label>
+          </div>
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Cancelar</button>
+      </form>
+    </main>
+  </body>
+</html>
